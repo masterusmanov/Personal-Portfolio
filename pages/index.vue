@@ -64,9 +64,9 @@
                 <p class="font-bold text-[24px] text-blue-500 font-bold text-center">Projects</p>
                 <h1 class="font-bold text-[48px] font-bold text-center">What I have made?</h1>
                     <div class="flex flex-wrap justify-center items-center gap-10 mt-10">
-                       <div v-for="el in data.data._rawValue" :key="el.id" class="w-[30%] h-full border card grid justify-beetwen shadow-lg shadow-gray-600 rounded-lg">
-                            <img :src="el.project_img" alt="" class="w-full h-[200px] rounded-lg">
-                            <div class="px-5 py-5 grid gap-3 border-4 border-t-gray-500 rounded-lg ">
+                       <div v-for="el in data.data._rawValue" :key="el.id" class="w-[30%] h-full border card grid justify-beetwen shadow-lg shadow-gray-600 ">
+                            <img :src="el.project_img" alt="" class="w-full h-[200px]">
+                            <div class="px-5 py-5 grid gap-3 border-4 border-t-gray-500  ">
                                 <h1 class="font-bold text-[24px]">{{el.project_name}}</h1>
                                 <p class="text-[18px]">{{el.description}}</p>
                                 <div class="w-full text-blue-600 flex items-center justify-beetwen gap-6">
@@ -88,4 +88,9 @@
     const data1 = await useFetch('http://localhost:1987/api/skills')
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" >
+*{
+    scroll-behavior: smooth;
+}
+
+</style>
