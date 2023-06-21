@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="w-1/2 flex justify-center items-center font-bold">
-                    <img src="../public/cropped-IMG_9768.JPG" alt="" class="rounded-full w-[400px] object-cover">
+                    <img src="../public/my_photo.JPG" alt="" class="rounded-full w-[400px] object-cover">
                 </div>
             </div>
         </div>
