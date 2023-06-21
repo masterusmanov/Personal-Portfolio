@@ -1,6 +1,7 @@
 <script setup>
 
-const data4 = await useFetch('http://localhost:1987/api/blog')
+// const data4 = await useFetch('http://localhost:1987/api/blog')
+const data4 = await useFetch('https://backendportfolio-production-07d4.up.railway.app/api/blog')
 console.log(data4.data._rawValue);
 
 
