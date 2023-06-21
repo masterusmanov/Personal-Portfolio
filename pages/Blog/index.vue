@@ -8,7 +8,7 @@
       <h1 class="text-4xl font-bold">Blog</h1>
       <div class="flex justify-beetwen items-center gap-6 mt-10">
         <div class="w-[30%]">
-            <img src="../../public/my_photo.JPG" alt="Blog" class="rounded-xl">
+            <img src="../../public/my_photo.png" alt="Blog" class="rounded-xl">
         </div>
         <div class="w-[100%] text-justify p-4 pt-14 border-b border-gray-500">
             <h1 class="font-bold text-2xl pt-5">ABOUTE BLOG</h1>
