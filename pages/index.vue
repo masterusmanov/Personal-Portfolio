@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="w-1/2 flex justify-center items-center font-bold">
-                    <img src="../public/my_photo.png" alt="" class="rounded-full w-[400px] object-cover">
+                    <img src="../public/myphoto.png" alt="" class="rounded-full w-[400px] object-cover">
                 </div>
             </div>
         </div>
@@ -49,15 +49,11 @@
                 <div class=" grid items-center justify-center">
                     <p class="font-bold text-[24px] text-blue-500 font-bold text-center">Skills</p>
                     <h1 class="font-bold text-[48px] font-bold text-center">What I am capable of?</h1>
-                    <div class="flex justify-center items-center gap-10 mt-10">
-                        <img src="https://static.vecteezy.com/system/resources/previews/012/697/299/original/stylized-3d-html-logo-design-free-png.png" alt="HTML" class="w-[150px]">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="CSS" class="w-[150px]">
-                        <img src="https://www.pngitem.com/pimgs/m/27-278312_bootstrap-bootstrap-logo-black-and-white-hd-png.png" alt="Bootstrap" class="w-[150px]">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png" alt="Tailwind" class="w-[150px]">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/640px-Vue.js_Logo_2.svg.png" alt="Tailwind" class="w-[150px]">
-                        <img src="https://static-00.iconduck.com/assets.00/node-js-icon-1901x2048-mk1e13df.png" alt="Tailwind" class="w-[150px]">
+                    <div class="flex justify-center items-center gap-6">
+                        <div  v-for="el in data1.data._rawValue" :key="el.id" class="flex justify-center items-center gap-10 mt-10">
+                            <img :src="el.skill_icon" alt="HTML" class="w-[150px] h-[120px]">
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -68,41 +64,17 @@
                 <p class="font-bold text-[24px] text-blue-500 font-bold text-center">Projects</p>
                 <h1 class="font-bold text-[48px] font-bold text-center">What I have made?</h1>
                     <div class="flex flex-wrap justify-center items-center gap-10 mt-10">
-                       <div class="w-[30%] h-full border card grid justify-beetwen shadow-lg shadow-gray-600 rounded-lg">
-                            <img src="../public/My_portfolio.png" alt="" class="w-full rounded-lg">
+                       <div v-for="el in data.data._rawValue" :key="el.id" class="w-[30%] h-full border card grid justify-beetwen shadow-lg shadow-gray-600 rounded-lg">
+                            <img :src="el.project_img" alt="" class="w-full h-[200px] rounded-lg">
                             <div class="px-5 py-5 grid gap-3 border-4 border-t-gray-500 rounded-lg ">
-                                <h1 class="font-bold text-[24px]">Portfolio Website Design</h1>
-                                <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsa!</p>
+                                <h1 class="font-bold text-[24px]">{{el.project_name}}</h1>
+                                <p class="text-[18px]">{{el.description}}</p>
                                 <div class="w-full text-blue-600 flex items-center justify-beetwen gap-6">
-                                    <a href="#">Project Link</a>
-                                    <a href="#">Github Link</a>
+                                    <a :href="el.project_link">Project Link</a>
+                                    <a :href="el.link_github_project">Github Link</a>
                                 </div>
                             </div>
                        </div>
-                       <!-- ==================================== -->
-                       <div class="w-[30%] h-full border card grid justify-beetwen shadow-lg shadow-gray-600 rounded-lg">
-                        <img src="../public/My_portfolio.png" alt="" class="w-full rounded-lg">
-                        <div class="px-5 py-5 grid gap-3 border-4 border-t-gray-500 rounded-lg ">
-                            <h1 class="font-bold text-[24px]">Portfolio Website Design</h1>
-                            <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsa!</p>
-                            <div class="w-full text-blue-600 flex items-center justify-beetwen gap-6">
-                                <a href="#">Project Link</a>
-                                <a href="#">Github Link</a>
-                            </div>
-                        </div>
-                   </div>
-                   <!-- ============================================== -->
-                   <div class="w-[30%] h-full border card grid justify-beetwen shadow-lg shadow-gray-600 rounded-lg">
-                    <img src="../public/My_portfolio.png" alt="" class="w-full rounded-lg">
-                    <div class="px-5 py-5 grid gap-3 border-4 border-t-gray-500 rounded-lg ">
-                        <h1 class="font-bold text-[24px]">Portfolio Website Design</h1>
-                        <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsa!</p>
-                        <div class="w-full text-blue-600 flex items-center justify-beetwen gap-6">
-                            <a href="#">Project Link</a>
-                            <a href="#">Github Link</a>
-                        </div>
-                    </div>
-               </div>
                <!-- ================================ -->
                 </div>
             </div>
@@ -112,6 +84,8 @@
 </template>
 
 <script setup>
+    const data = await useFetch('http://localhost:1987/api/project')
+    const data1 = await useFetch('http://localhost:1987/api/skills')
 </script>
 
 <style lang="scss" scoped></style>

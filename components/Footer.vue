@@ -10,6 +10,9 @@
                     <a href="https://www.linkedin.com/in/elyor-usmanov-77016323b/"><img src="https://cdn-icons-png.flaticon.com/512/185/185964.png" alt="LinkedIn" class="w-[70px]"></a>
                     <a href="https://github.com/masterusmanov"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="w-[70px]"></a>
                     <a href="https://t.me/masterusmanov"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Telegram_Messenger.png/800px-Telegram_Messenger.png" alt="Instagram" class="w-[75px]"></a>
+                    <div  v-for="el in data2.data._rawValue" :key="el.id">
+                        <a :href="el.social_network"><img :src="el.image_link" alt="Instagram" class="w-[75px]"></a>
+                    </div>
                 </div>
                 <div class="pt-10 mt-10 text-[20px]">
                     <p>Copyright © {{new Date().getFullYear()}}. Develop & Designed by Usmanov Elyor</p>
@@ -20,7 +23,7 @@
 </template>
 
 <script setup>
-
+    const data2 = await useFetch('http://localhost:1987/api/aboute-me')
 </script>
 
 <style lang="scss" scoped>
