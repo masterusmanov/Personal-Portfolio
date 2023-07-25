@@ -65,10 +65,10 @@
                 <h1 class="font-bold text-[48px] font-bold text-center">What I have made?</h1>
                     <div class="flex flex-wrap justify-center items-center gap-10 mt-10">
                        <div v-for="el in data.data._rawValue" :key="el.id" class="w-[30%] h-full border card grid justify-beetwen shadow-lg shadow-gray-600 ">
-                            <img :src="el.project_img" alt="" class="w-full h-[200px]">
+                            <img :src="el.project_img" alt="" class="w-full h-[300px]">
                             <div class="px-5 py-5 grid gap-3 border-4 border-t-gray-500  ">
                                 <h1 class="font-bold text-[24px]">{{el.project_name}}</h1>
-                                <p class="text-[18px]">{{el.description}}</p>
+                                <p class="text-[18px] h-[60px]">{{el.description}}</p>
                                 <div class="w-full text-blue-600 flex items-center justify-beetwen gap-6">
                                     <a :href="el.project_link">Project Link</a>
                                     <a :href="el.link_github_project">Github Link</a>
