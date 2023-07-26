@@ -14,7 +14,7 @@
                         <p class="text-[20px]">I am a Full-stack (NodeJs+VueJs) developer</p>
                     </div>
                     <div class="flex justify-beetwen mt-10 items-center gap-10">
-                        <a href="https://docs.google.com/document/d/1EZy1HVoDoiefDWBnA9ZxZJF_itNbpx-OIrrYRWwWps0/edit?usp=sharing" download class="py-4 px-8 text-xl bg-blue-400 text-white font-bold rounded-xl hover:bg-blue-600">Download CV</a>
+                        <a href="https://docs.google.com/document/d/1YFcHvr01h8S2c2nMwF2ocv5Nmoi_8dWE3NxQI8bbrC8/edit?usp=sharing" download class="py-4 px-8 text-xl bg-blue-400 text-white font-bold rounded-xl hover:bg-blue-600">Download CV</a>
                     </div>
                 </div>
                 <div class="myypic w-1/2 flex justify-center items-center font-bold">
