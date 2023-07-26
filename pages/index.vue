@@ -5,7 +5,7 @@
             <div class="hi flex jusrify-beetwen items-center ">
                 <div class="about w-1/2 grid items-center justify-center pl-[100px]">
                     <div>
-                        <p class="font-bold text-[24px]">Hi Everyone, I am</p>
+                        <p class="font-bold text-[24px]">Hi everyone, I am</p>
                     </div>
                     <div>
                         <h1 class="font-bold text-[48px]">Usmanov Elyor Elmuratovich</h1>
@@ -37,7 +37,7 @@
                         <h1 class="font-bold text-[48px] font-bold">About myself</h1>
                     </div>
                     <div class="text">
-                        <p class="text-[20px] text-justify">I am Usmanov Elyor Elmuratovich and was born in 1987 in a family of workers. I am married, I have 4 children. I graduated from high school in 1994-2002. In 2002-2005, I graduated from Uchkurgan College of Economics, majoring in "Information Technologies". From 2005 to 2022, I had my own "Radio electronics and computer repair" workshop and worked there. In 2022-2023, I studied in the "Foundation" and "Bootcamp Full-stack (NodeJS+VueJs)" courses at the "Najot Ta'lim" educational center.</p>
+                        <p class="text-[20px] text-justify">I am Usmanov Elyor Elmuratovich and was born in 1987. I studied in the "Foundation" and "Bootcamp Full-stack (NodeJS+VueJs)" courses at the "Najot Ta'lim" educational center.</p>
                     </div>
                 </div>
             </div>
