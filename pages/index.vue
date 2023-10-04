@@ -85,9 +85,9 @@
 
 <script setup>
     // const data = await useFetch('http://localhost:1987/api/project')
-    const data = await useFetch('https://backendportfolio-production-07d4.up.railway.app/api/project')
+    const data = await useFetch('https://masterusmanov.onrender.com/api/project')
     // const data1 = await useFetch('http://localhost:1987/api/skills')
-    const data1 = await useFetch('https://backendportfolio-production-07d4.up.railway.app/api/skills')
+    const data1 = await useFetch('https://masterusmanov.onrender.com/api/skills')
 </script>
 
 <style lang="scss" >
