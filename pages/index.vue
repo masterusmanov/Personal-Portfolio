@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="myypic w-1/2 flex justify-center items-center font-bold">
-                    <img src="../public/myphoto.png" alt="" class="mypic rounded-full w-[400px] object-cover">
+                    <img src="../public/moy-e157806a.png" alt="" class="mypic rounded-full w-[400px] object-cover">
                 </div>
             </div>
         </div>
