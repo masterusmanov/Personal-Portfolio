@@ -9,7 +9,7 @@
                 </div>
                 <div class="menu w-1/2 flex justify-end items-center font-bold gap-6 mr-5">
                     <a href="#aboute" class="hover:text-red-500">Home</a>
-                    <a href="#aboute" class="hover:text-red-500">Aboute</a>
+                    <a href="#aboute" class="hover:text-red-500">About</a>
                     <a href="#skills" class="hover:text-red-500">Skill</a>
                     <a href="#project" class="hover:text-red-500">Project</a>
                     <a href="/blog" class="hover:text-red-500">Blog</a>
